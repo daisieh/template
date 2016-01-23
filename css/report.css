@@ -1,0 +1,13 @@
+table.report {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 0 auto;
+}
+.report_cells td {
+  border: 1px solid grey;
+  padding: 2px;
+}
+.db_listhead {
+  font-weight: bold;
+}

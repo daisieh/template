@@ -1,0 +1,101 @@
+.gallery_comments {
+	border: 5px solid #fff;
+	margin:0;
+	padding:5px;
+	position: fixed;
+	z-index:1141;
+}
+
+.gallery_modal {
+	background-color: #fff;
+	border: 5px solid #fff;
+	margin:0;
+	overflow:hidden;
+	padding:5px;
+	position: fixed;
+	z-index:1141;
+}
+
+.gallery_overlay {
+	background-color: #000;
+	bottom: 0;
+	display: none;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1140;
+}
+
+#.gallery_loading{ background: #fff url(../images/gallery/gallery_loading.gif) no-repeat center; }
+
+#gallery_image{ margin:0; padding:0; height:0; border:none; font-size:0; overflow:hidden; }
+
+.clear{ clear:both; height:0; margin:0; padding:0; font-size:0; overflow:hidden; }
+
+#gallery_bottom { 
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	padding-top:8px;
+	margin:0;
+}
+
+#gallery_navigation {
+	border-left:1px solid #9c9c9c;
+	float:right;
+	padding-top:3px;
+	width:27px;
+}
+
+#gallery_count { 
+	width:55px; 
+	float:right;
+	overflow:hidden;
+	padding-top:1px;
+	float:right;
+	text-align:right;
+	font-size:9px;
+}
+
+#gallery_close_link, #gallery_prev_link, #gallery_next_link{
+	outline:none;
+	display:block;
+	float:right;
+	height:20px;
+	cursor: pointer;
+}
+
+#gallery_prev_link, #gallery_next_link{ width:17px; }
+#gallery_prev_link{ background: transparent url(../images/gallery/gallery_prev.gif) no-repeat; }
+#gallery_next_link{ background: transparent url(../images/gallery/gallery_next.gif) no-repeat; }
+
+a#gallery_prev_link:hover,a#gallery_next_link:hover,a#gallery_close_link:hover {
+	background-position: 0 -23px !important;
+}
+
+#gallery_close_link {
+	width:20px;
+	background: transparent url(../images/gallery/gallery_close.gif) no-repeat;
+}
+
+#gallery_description {
+	padding:0px 10px 0 0;
+}
+#gallery_description table {
+	background-color: #fff;
+	color: #666;
+}
+#gallery_description table a {
+	color: inherit;
+}
+.gallery_img {
+	border: solid white 3px;
+}
+.gallery_img img {
+	max-height: 235px;
+	max-width: 235px;
+}

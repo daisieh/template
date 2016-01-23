@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context
+	reloadable="false">
+<Realm
+	className="org.apache.catalina.realm.JDBCRealm"
+	connectionName="mosaic"
+	connectionPassword="postgres"
+	connectionURL="jdbc:postgresql:template?user=mosaic"
+	digest="MD5"
+	driverName="org.postgresql.Driver"
+	roleNameCol="role"
+	userCredCol="password"
+	userNameCol="user_name"
+	userRoleTable="user_roles"
+	userTable="people"/>
+<Resource name="jdbc/db"
+    type="javax.sql.DataSource"
+    driverClassName="org.postgresql.Driver"
+    url="jdbc:postgresql:template"
+    username="mosaic"
+    password="postgres"
+    maxActive="20"
+    maxIdle="10"
+    maxWait="5000"
+    removeAbandoned="true"
+    logAbandoned="true"
+    removeAbandonedTimeout="60" />
+</Context>
