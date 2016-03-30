@@ -14,9 +14,13 @@
 	}
 </script>
 <table class="email">
+<%
+	if (r.site.getSettings().getBoolean("show send email to community members link")) {
+%>
 	<tr>
 		<td style="border-bottom: 1px solid #999"><a href="send_email.jsp" class="btn btn-default btn-xs">send email to community members</a></td>
 	</tr>
+<% } %>
 	<tr>
 		<td>
 			<table class="table table-condensed table-hover">
