@@ -194,7 +194,7 @@ ALTER SEQUENCE _roles__id_seq OWNED BY _roles_.id;
 
 CREATE TABLE _settings_ (
     id integer NOT NULL,
-    name character varying(30),
+    name character varying,
     value character varying
 );
 
@@ -4033,6 +4033,7 @@ COPY _settings_ (id, name, value) FROM stdin;
 35	smtp username	zenlunatics_smtp
 36	smtp password	zl_smtp_135
 37	smtp	smtp.webfaction.com
+38	show send email to community members link	yes
 \.
 
 
@@ -4040,7 +4041,7 @@ COPY _settings_ (id, name, value) FROM stdin;
 -- Name: _settings__id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('_settings__id_seq', 37, true);
+SELECT pg_catalog.setval('_settings__id_seq', 38, true);
 
 
 --
@@ -4992,7 +4993,7 @@ SELECT pg_catalog.setval('pages_items_id_seq', 1, false);
 --
 
 COPY people (id, first, last, email, user_name, password, active, address, birthday, coho, families_id, middle, phone, theme, resident, last_login, owner, picture, bio) FROM stdin;
-1	Administrator	\N	\N	admin	e1b6f00013bb86d002664316b3e95e59	f	\N	\N	f	\N	\N	\N	bootstrap	f	2015-11-28 16:44:33	f	\N	\N
+1	Administrator	\N	\N	admin	e1b6f00013bb86d002664316b3e95e59	f	\N	\N	f	\N	\N	\N	bootstrap	f	2016-02-09 19:18:59	f	\N	\N
 \.
 
 
